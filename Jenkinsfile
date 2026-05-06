@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     tools {
-        maven 'maven'
-        jdk 'jdk-21'
+        maven 'Maven'
+        jdk 'jdk'
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'YOUR_GITHUB_LINK'
+                git branch: 'main', url: 'https://github.com/Aye-Sha26/tomcat4.git'
             }
         }
 
